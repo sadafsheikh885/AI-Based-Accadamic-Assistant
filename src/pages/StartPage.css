@@ -1,0 +1,40 @@
+.start-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fb;
+}
+
+.start-card {
+  background: white;
+  padding: 40px;
+  width: 400px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #5b5fe8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: transparent;
+  color: #5b5fe8;
+  border: 2px solid #5b5fe8;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}

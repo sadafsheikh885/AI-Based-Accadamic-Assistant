@@ -1,0 +1,171 @@
+/* ================= WRAPPER ================= */
+
+.start-wrap{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  overflow: hidden;
+
+  /* ✅ Smooth Purple/Blue BG (2nd image jaisa) */
+  background: linear-gradient(135deg, #8045e7,#fdfdfd);
+}
+
+/* ✅ Glass Bubbles (Replace old glow circles) */
+.start-wrap::before,
+.start-wrap::after{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.55;
+  z-index: 1;
+}
+
+/* Big bubble */
+.start-wrap::before{
+  width: 320px;
+  height: 320px;
+  top: 18%;
+  left: 12%;
+  background: radial-gradient(circle at 30% 30%,
+    rgba(255,255,255,0.85),
+    rgba(173,124,255,0.45)
+  );
+}
+
+/* Medium bubble */
+.start-wrap::after{
+  width: 240px;
+  height: 240px;
+  bottom: 18%;
+  right: 12%;
+  background: radial-gradient(circle at 30% 30%,
+    rgba(255,255,255,0.85),
+    rgba(123,156,255,0.45)
+  );
+}
+
+/* ✅ Extra bubbles (JSX me div add karna hoga) */
+.bubble{
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.55;
+  z-index: 1;
+  background: radial-gradient(circle at 30% 30%,
+    rgba(255,255,255,0.9),
+    rgba(160,120,255,0.35)
+  );
+}
+
+.b1{
+  width: 120px;
+  height: 120px;
+  top: 25%;
+  right: 30%;
+}
+
+.b2{
+  width: 90px;
+  height: 90px;
+  bottom: 30%;
+  left: 28%;
+}
+
+.b3{
+  width: 150px;
+  height: 150px;
+  top: 60%;
+  right: 8%;
+}
+
+/* ================= CARD ================= */
+
+.start-card{
+  width: min(1350px, 95vw);
+  height: min(680px, 90vh);
+  background: rgba(255,255,255,0.15);  /* semi transparent */
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 40px 60px;
+  position: relative;
+  z-index: 2;
+}
+/* ================= SIDE IMAGES ================= */
+
+.side{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illus{
+  width: 115%;
+  max-width: 560px;
+  object-fit: contain;
+}
+
+/* ================= CENTER ================= */
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  transform: translateY(-30px);
+}
+
+/* ================= TITLE ================= */
+
+.title{
+  font-family: serif;
+  font-size: 75px;
+  color: #111;
+  margin: 0;
+  text-align: center;
+
+  animation: titleFloat 3s ease-in-out infinite,
+             titleGlow 2s ease-in-out infinite;
+}
+
+@keyframes titleFloat {
+  0%,100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes titleGlow {
+  0%,100% {
+    text-shadow: 0 0 10px rgba(123,63,228,0.3);
+  }
+  50% {
+    text-shadow: 0 0 25px rgba(255,79,163,0.5);
+  }
+}
+
+/* ================= BUTTON ================= */
+
+.btn{
+  padding: 18px 100px;
+  font-size: 26px;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, #5a18ce, #ff4fa3);
+  color: #fff;
+  font-weight: 600;
+}
+/* ================= VIDEO ================= */
+
+.video{
+  width: 115%;
+  max-width: 560px;
+  border-radius: 16px;
+  object-fit: cover;
+}

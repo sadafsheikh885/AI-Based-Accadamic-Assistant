@@ -1,0 +1,90 @@
+/* ===== MAIN CONTAINER ===== */
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== LEFT SIDE (GRADIENT) ===== */
+.right-side {
+  width: 40%;
+  background: linear-gradient(135deg, #8e44ad, #8a46c2);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.right-side h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.right-side span {
+  font-size: 22px;
+}
+
+/* ===== IMAGE ===== */
+.right-side img {
+  margin-top: 40px;
+  width: 300px;
+  max-width: 100%;
+}
+
+/* ===== RIGHT SIDE (FORM) ===== */
+.left-side {
+  width: 60%;
+  background: #f4f4f4;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-side h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.left-side p {
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+/* ===== INPUT ===== */
+.left-side label {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.left-side input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #c6c3c3;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* ===== BUTTON ===== */
+.login-btn {
+  margin-top: 40px;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #6c5ce7;
+  color: white;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #5a4bd8;
+}
